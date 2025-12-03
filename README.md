@@ -37,7 +37,7 @@ Due to these dependencies, reproducing the complete run outside this environment
 
 **NOTE**: A faster formulation of the FDT violation metric is currently under development to enable faster computation on standard personal computers. Please contact the corresponding authors before using the code, as this implementation may be available upon request at the time of contact. All results from the paper were obtained using the numerical implementation included here.
 
- **DISCLAIMER:** USE THE ORDER STATED IN THE REPOSITORY (GEC --> Analytical --> FDT Violations): THESE ARE THE FIRST STEP REQUIRED TO ENSURE EVERYTHING WORKS CORRECTLY!
+ **DISCLAIMER:** USE THE ORDER STATED IN THE REPOSITORY (GEC --> Analytical Thermoydnamics--> FDT Violations): THESE ARE THE STEPs REQUIRED TO ENSURE EVERYTHING WORKS CORRECTLY!
 
 All code and analysis pipelines were created by **Tomas Berjaga-Buisan & Juan Manuel-Monti**.
 
