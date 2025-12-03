@@ -37,6 +37,8 @@ Due to these dependencies, reproducing the complete run outside this environment
 
 **NOTE**: A faster formulation of the FDT violation metric is currently under development to enable faster computation on standard personal computers. Please contact the corresponding authors before using the code, as this implementation may be available upon request at the time of contact. All results from the paper were obtained using the numerical implementation included here.
 
+ **DISCLAIMER:** USE THE ORDER STATED IN THE REPOSITORY (GEC --> Analytical --> FDT Violations): THESE ARE THE FIRST STEP REQUIRED TO ENSURE EVERYTHING WORKS CORRECTLY!
+
 All code and analysis pipelines were created by **Tomas Berjaga-Buisan & Juan Manuel-Monti**.
 
 This work was conducted within the Computational Neuroscience Research Group at Universitat Pompeu Fabra (Barcelona, Spain) in collaboration with CONICET (Universidad Nacional de Rosario & Universidad de San Andrés) , Institut d’Investigacions Biomèdiques August Pi i Sunyer (IDIBAPS), Università degli Studi di Milano, University of Oxford, Aarhus University, University of Padova, IRCCS and Institució Catalana de Recerca i Estudis Avançats (ICREA)
