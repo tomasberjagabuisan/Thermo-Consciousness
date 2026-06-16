@@ -1,12 +1,10 @@
-**"Thermodynamics of consciousness: A non-invasive perturbational framework"**
-
 *Authors: Tomas Berjaga-Buisan, Juan Manuel Monti, Martina Cortada, Michele A. Colombo, Sebastian M. Geli, Gianluca Gaglioti, Simone Sarasso, Morten L. Kringelbach, Maurizio Corbetta, Maria V. Sanchez-Vives, Marcello Massimini, Yonatan Sanz Perl, Gustavo Deco*
 
 ### 🧠 Overview
 
 This repository accompanies the manuscript. Researchers are encouraged to contact the corresponding author for clarification or assistance in applying the methods. Please cite if you use this code:
 
-> **Berjaga-Buisan, T., et al. (2025). Thermodynamics of consciousness: A non-invasive perturbational framework. [Preprint / DOI link to be added]**
+> **Berjaga-Buisan, T., et al. Cell Reports. 2026**
 
 The quest for reliable and objective measures of consciousness is critical in basic and clinical neuroscience. Across species, the Perturbational Complexity Index (PCI) has emerged as a robust empirical marker by directly perturbing the brain, yet its underlying **principles of physics** remain unclear. Here, we bridge this gap by introducing a non-invasive framework based on **generative whole-brain models of non-equilibrium brain dynamics**. Using these models, we identified **violations of the Fluctuation-Dissipation Theorem (FDT) in humans and rodents across wakefulness, anesthesia, and disorders of consciousness.**  
 
