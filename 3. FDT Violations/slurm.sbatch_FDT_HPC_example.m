@@ -218,6 +218,7 @@ for sub = substart:NSUB
         % -----------------------------------------------------------------
         % Compute C(t,s), A(t,s) and R(t,s) for this simulation
         % -----------------------------------------------------------------
+        % noise = noise/sqrt(dt); % We must divide by sqrt(dt), look at your convention
         [Csimaux,Asimaux,Rsimaux] = funcs_FDT_CAR_sim(ts,force,noise,NPARCELLS,Tup,Temp);
 
         % Accumulate over simulations
