@@ -41,9 +41,9 @@ function [Csim,Asim,Rsim] = funcs_FDT_CAR_sim(tsaux,forceaux,noiseaux,NPARCELLS,
 
     % --- Memory Allocation ---
     % Pre-allocate 3D tensors: [Nodes x Time(t) x Time(s)]
-    Csimaux = zeros(NPARCELLS,Tmax,Tmax);
-    Asimaux = zeros(NPARCELLS,Tmax,Tmax);
-    Rsimaux = zeros(NPARCELLS,Tmax,Tmax);
+    Csimaux = zeros(NPARCELLS,Tup,Tup);
+    Asimaux = zeros(NPARCELLS,Tup,Tup);
+    Rsimaux = zeros(NPARCELLS,Tup,Tup);
 
     % First option: nested loops
     for tt = 1:Tup
@@ -67,4 +67,9 @@ function [Csim,Asim,Rsim] = funcs_FDT_CAR_sim(tsaux,forceaux,noiseaux,NPARCELLS,
     % --- Normalization ---
     % Normalize Response function by Temperature (1/sigma^2)
     Rsimaux = (0.5 / Temp) * Rsimaux;
+
+    % --- Assign outputs ---
+    Csim = Csimaux;
+    Asim = Asimaux;
+    Rsim = Rsimaux;
 end
