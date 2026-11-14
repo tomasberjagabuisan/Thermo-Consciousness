@@ -21,10 +21,10 @@
 %   • FCempsub : empirical FC(0)
 %   • FCsimsub : FC(0) from the final model
 
-% Author  : Tomas Berjaga Buisan
+% Author  : Tomas Berjaga I Buisan
 
 % Copyright
-%   © 2025 Your Lab. MIT License.
+%   © 2025 Tomas Berjaga I Buisan. MIT License.
 % ========================================================================
 
 clear all; clc;
