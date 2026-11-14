@@ -194,7 +194,7 @@ if dolinfit == 1
     Ceffsub = Ceffsub./NSIMFIT;
     FCempsub = FCempsub./NSIMFIT;
     FCsimsub = FCsimsub./NSIMFIT;
-    Isubdiag = find(tril(ones(60),-1));
+    Isubdiag = find(tril(ones(nParcels),-1));
     cc=corrcoef(atanh(FCempsub(Isubdiag)),atanh(FCsimsub(Isubdiag)));
     corrFC = cc(2);
     %%% Save the Ceffsub to use later
