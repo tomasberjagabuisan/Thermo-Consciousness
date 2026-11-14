@@ -1,5 +1,3 @@
-*Authors: Tomas Berjaga-Buisan, Juan Manuel Monti, Martina Cortada, Michele A. Colombo, Sebastian M. Geli, Gianluca Gaglioti, Simone Sarasso, Morten L. Kringelbach, Maurizio Corbetta, Maria V. Sanchez-Vives, Marcello Massimini, Yonatan Sanz Perl, Gustavo Deco*
-
 ### 🧠 Overview
 
 This repository accompanies the manuscript. Researchers are encouraged to contact the corresponding author for clarification or assistance in applying the methods. Please cite if you use this code:
