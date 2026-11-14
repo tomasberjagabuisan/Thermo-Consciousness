@@ -15,7 +15,7 @@ function [Ceffsub,FCemp,FCsim] = linear_linfit_sub(tsdata,NPARCELLS,TR,Tinf,sigm
 % Name-Value pairs (optional)
 %   'Tau'        : lag in samples for lagged covariance target (default = 1).
 %                  It can be modified depending on the data.
-%   'EpsFC'      : learning rate for FC(0) term (default = 1e-4).
+%   'EpsFC'      : learning rate for FC(0) term (default = 4e-4).
 %                  MODIFY DEPENDING ON THE FITTING LEVELS
 %   'EpsTau'     : learning rate for lagged covariance term (default = 1e-4).
 %                  MODIFY DEPENDING ON THE FITTING LEVELS
@@ -34,10 +34,10 @@ function [Ceffsub,FCemp,FCsim] = linear_linfit_sub(tsdata,NPARCELLS,TR,Tinf,sigm
 %   • The update keeps C non-negative and re-enforces diagonal dominance to
 %     satisfy a Hurwitz-like stability criterion at each step.
 
-% Author  : Tomas Berjaga Buisan
+% Author  : Tomas Berjaga I Buisan
 
 % Copyright
-%   © 2025 Your Lab. MIT License.
+%   © 2026 Tomas Berjaga I Buisan. MIT License.
 % ========================================================================
 
 % ──────────────────────────────────────────────────────────────────────────
@@ -51,6 +51,7 @@ p.addParameter('ErrorTol',  1e-5,    @(x)isnumeric(x)&&isscalar(x)&&x>0);
 p.addParameter('MaxIter',   5000,    @(x)isnumeric(x)&&isscalar(x)&&x>0);
 p.addParameter('Seed',      [],      @(x)isempty(x)||(isnumeric(x)&&isscalar(x)));
 p.addParameter('UseAbsCov', true,    @(x)islogical(x)&&isscalar(x));
+p.addParameter('LaggedCov', 'signed', @(x)any(strcmp(x,{'signed','magnitude'})));
 p.parse(varargin{:});
 
 Tau      = p.Results.Tau;
@@ -60,6 +61,7 @@ errTol   = p.Results.ErrorTol;
 maxIter  = p.Results.MaxIter;
 seed     = p.Results.Seed;
 useAbs   = p.Results.UseAbsCov;
+lagMode  = p.Results.LaggedCov;
 
 % ──────────────────────────────────────────────────────────────────────────
 % Empirical targets: FC(0) and normalized lagged covariance COV_tau
@@ -93,6 +95,10 @@ for i = 1:N
 end
 
 COVtauemp = COVtauemp.*sigratio;
+
+if strcmp(lagMode,'magnitude')
+    COVtauemp = abs(COVtauemp);
+end
 
 % ──────────────────────────────────────────────────────────────────────────
 % Initialize connectivity C (nonnegative, symmetric, diagonally dominant)
