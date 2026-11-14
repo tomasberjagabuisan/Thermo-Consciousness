@@ -4,7 +4,7 @@
 
 This repository accompanies the manuscript. Researchers are encouraged to contact the corresponding author for clarification or assistance in applying the methods. Please cite if you use this code:
 
-> **Berjaga-Buisan, T., et al. Cell Reports. 2026**
+> **Berjaga-Buisan, T.**, Monti, J.M., Cortada, M., Colombo, M.A., Geli, S.M., Gaglioti, G., Sarasso, S., Kringelbach, M.L., Corbetta, M., Sanchez-Vives, M.V., Massimini, M., Sanz Perl, Y., & Deco, G. (2026). *Thermodynamics of consciousness: Non-equilibrium brain dynamics track conscious states*. **Cell Reports**, 45(8), 117782. https://doi.org/10.1016/j.celrep.2026.117782
 
 The quest for reliable and objective measures of consciousness is critical in basic and clinical neuroscience. Across species, the Perturbational Complexity Index (PCI) has emerged as a robust empirical marker by directly perturbing the brain, yet its underlying **principles of physics** remain unclear. Here, we bridge this gap by introducing a non-invasive framework based on **generative whole-brain models of non-equilibrium brain dynamics**. Using these models, we identified **violations of the Fluctuation-Dissipation Theorem (FDT) in humans and rodents across wakefulness, anesthesia, and disorders of consciousness.**  
 
