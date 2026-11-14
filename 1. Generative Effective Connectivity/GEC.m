@@ -24,7 +24,7 @@
 % Author  : Tomas Berjaga I Buisan
 
 % Copyright
-%   © 2025 Tomas Berjaga I Buisan. MIT License.
+%   © 2026 Tomas Berjaga I Buisan. MIT License.
 % ========================================================================
 
 clear all; clc;
