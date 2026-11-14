@@ -24,7 +24,7 @@ function [Ceffsub,FCemp,FCsim] = linear_linfit_sub(tsdata,NPARCELLS,TR,Tinf,sigm
 %   'MaxIter'    : maximum number of iterations (default = 5000).
 %   'UseAbsCov'  : use abs(cov) (true) to stabilize the variance normalization (default = true).
 %   'LaggedCov'  : 'signed' : the empirical lagged covariance keeps its sign. 
-%                'magnitude': absolute value of the
+%                'magnitude': absolute value of the empirical lagged covariance.
 %
 % Outputs
 %   Ceff   : [nParcels x nParcels] fitted effective connectivity matrix.
